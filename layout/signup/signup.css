@@ -1,0 +1,75 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.signup-page {
+  position: relative;
+  background-image: url("../_images/signup-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  height: 100%;
+}
+.signup-form {
+  position: relative;
+  height: auto;
+  left: 35%;
+  top: 5%;
+  background-image: url("../_images/mem-home.gif");
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+}
+.page-txt {
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  color: #cce6ff
+}
+
+.member-register {
+  margin: 20px;
+  border: none;
+}
+.member-register input {
+  background: #fff;
+  margin-bottom: 25px;
+  width: 90%;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #c6c7cc;
+  padding: 8px;
+}
+
+#register-btn {
+  background: linear-gradient(#00b3ee, #0066bb);
+  border: 0;
+  color: #fff;
+  border-radius: 2px;
+  text-align: center;
+  padding: 12px 35px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+#register-btn:hover {
+  background: #0066bb;
+}
+
+#signin-btn {
+  background: linear-gradient(#00b3ee, #0066bb);
+  border: 0;
+  color: #fff;
+  border-radius: 2px;
+  text-align: center;
+  padding: 11px 9px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  width: 132px;
+  margin-left: 30px;
+}
+#signin-btn:hover {
+  background: #0066bb;
+}
