@@ -1,0 +1,194 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Century Gothic", 'Lucida Grande', sans-serif;
+  color: white;
+  background-image: url("../_images/mem-home.gif");
+  background-position: center, center;
+}
+/*
+*Homepage
+*/
+
+.flix-logo img {
+  width: 110px;
+  height: 90px;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.flix-wrapper {
+  position: relative;
+  /*background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  height: 100%;*/
+  background-image: url("../_images/mem-home.gif");
+  background-position: center, center;
+}
+.flix-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.signout-btn {
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  background: #00ccff;
+  border-radius: 6px;
+  padding: 13px 20px;
+  top: 25%;
+  right: 20px;
+  width: 60px;
+  color: #000;
+  font-size: 12px;
+}
+.signout-btn a{
+ color: #000; 
+}
+.signout-btn:hover {
+  background: #00a3cc;
+  cursor: pointer;
+}
+#search-flix {
+  position: absolute;
+  background: url("../_images/search.png") no-repeat 10px 6px #404040;
+  border: none;
+  font: 12px arial, helvetica, sans-serif;
+  color: white;
+  width: 200px;
+  padding: 8px 15px 8px 30px;
+  border-radius: 20px;
+  top: 28%;
+  right: 325px;
+}
+#search-flix:focus {
+  outline: none;
+}
+.user-name {
+  position: absolute;
+  top: 30%;
+  right: 150px;
+  color: #00ccff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+/*
+*Watch-list for User
+*/
+
+.watch-list {
+  position: relative;
+  color: #00ccff;
+  left: 5%;
+  right: 5%;
+  top: 130px;
+  height: 300px;
+  width: 90%;
+  z-index: 1;
+  font-size: 19px;
+  font-style: italic;
+}
+
+.watch-list-one{
+  margin-top: 30px;
+}
+.tile-wrapper {
+  position: absolute;
+  height: 240px;
+  width: 98%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.tile-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.movie-tile {
+  display: inline-flex;
+  width: 180px;
+  height: 90%;
+  margin: 15px 15px 15px 0;
+}
+.movie-tile img {
+  width: 100%;
+  height: 100%;
+  transition: all .1s ease-in-out;
+}
+.movie-tile img:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+/*
+*trending list movies
+*/
+
+.movie-list {
+  position: relative;
+  background-color: black;
+  height: 90%;
+}
+dialog {
+  width: 500px;
+  background: #e8e8e8;
+  border: 1px solid #dadada;
+  font-family: sans-serif;
+  padding: 5px 10px 20px 20px;
+}
+
+.bck-sparkle{
+  background-image: url("../_images/mem-home.gif");
+  border-bottom: 1px solid rgba(255, 255, 255, .65);
+ }
+
+.bck-sparkle .flix-logo img{
+  height: 65px;
+  padding-bottom: 6px;
+  width: 85px;
+}
+
+.bck-trans{
+  background-color: transparent;
+}
+
+.bck-trans .signout-btn{
+  margin-right: 6px;
+}
+.section-wrap{
+  position: relative;
+}
+.prev{
+  position: absolute;
+  width: 69px;
+  height: 216px;
+  background: rgba(166, 166, 166, 0.45) none repeat scroll 0px 0px;
+  font-size: 85px;
+  left:0px;
+  line-height: 190px;
+  color: #cccccc;
+  top: 15px;
+  z-index: 10;
+}
+
+.next{
+  position: absolute;
+  width: 69px;
+  height: 216px;
+  top: 15px; 
+  background: rgba(166, 166, 166, 0.45) none repeat scroll 0px 0px;
+  font-size: 85px;
+  right: 25px;
+  line-height: 190px;
+  color: #cccccc;
+  z-index: 10;
+}
+
