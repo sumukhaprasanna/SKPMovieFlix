@@ -1,4 +1,3 @@
-//movieflix jquery
 (function() {
   window.onbeforeunload = function() {
     window.scrollTo(0, 0);
@@ -6,7 +5,6 @@
 
   $(document).ready(function() {
 
-    //Header navbar on scroll background black
     var scroll_pos = 0;
     var filx_scroll = $('#flixhome');
     var flix_nav = filx_scroll.offset();
@@ -18,8 +16,6 @@
         $('#flix-navbar').addClass('bck-trans').removeClass('bck-sparkle');
       }
     });
-
-    //movieflix image retrieval from json and generating DOM
 
     //new release
     var newReleasePoster = document.getElementById('new-release-list');
@@ -47,9 +43,6 @@
     }
     htmlFavorite += "</div>";
     favoritePoster.innerHTML = htmlFavorite;
-
-
-
 
     //Action & Adventure
     var adventurePoster = document.getElementById('watch-adventure-list');
@@ -86,9 +79,6 @@
     }
     htmlDocumentaries += "</div>";
     documentariesPoster.innerHTML = htmlDocumentaries;
-
-
-
 
     var x = $(".tile-wrapper").offset();
     var b = parseInt(x.left);
